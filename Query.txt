@@ -1,0 +1,14 @@
+Есть две таблицы: Products и Categories со связями многие ко многим,
+это значит, что есть промежуточная таблица ProductCategories для хранения связей.
+
+SELECT
+    p.ProductName,
+    c.CategoryName
+FROM
+    Products p
+LEFT JOIN
+    ProductCategories pc ON p.ProductID = pc.ProductID
+LEFT JOIN
+    Categories c ON pc.CategoryID = c.CategoryID
+ORDER BY
+    p.ProductName, c.CategoryName;
