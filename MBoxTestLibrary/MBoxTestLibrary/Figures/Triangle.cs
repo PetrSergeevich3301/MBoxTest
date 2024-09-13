@@ -28,7 +28,7 @@ namespace MBoxTestLibrary.Figures
         }
 
 
-        public bool isRightTriangle()
+        public bool IsRightTriangle()
         {
             double[] sides = { sideA, sideB, sideC };
             Array.Sort(sides);  // Сортируем стороны по возрастанию. Наибольшая сторона - гипотенуза

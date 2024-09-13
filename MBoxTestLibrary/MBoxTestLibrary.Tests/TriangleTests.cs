@@ -32,7 +32,7 @@ namespace MBoxTestLibrary.Tests
             //Египетский треугольник
             double sideA = 3, sideB = 4, sideC = 5;
             Triangle triangle = new Triangle(sideA,sideB, sideC);
-            Assert.IsTrue(triangle.isRightTriangle());
+            Assert.IsTrue(triangle.IsRightTriangle());
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace MBoxTestLibrary.Tests
         {
             double sideA = 3, sideB = 5, sideC = 5;
             Triangle triangle = new Triangle(sideA, sideB, sideC);
-            Assert.IsFalse(triangle.isRightTriangle());
+            Assert.IsFalse(triangle.IsRightTriangle());
         }
 
         [TestMethod]
