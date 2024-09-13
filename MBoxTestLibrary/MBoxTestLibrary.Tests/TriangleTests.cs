@@ -27,7 +27,7 @@ namespace MBoxTestLibrary.Tests
         }
 
         [TestMethod]
-        public void TestIsTriangleRight_True()
+        public void TestIsRightTriangle_True()
         {
             //Египетский треугольник
             double sideA = 3, sideB = 4, sideC = 5;
@@ -36,7 +36,7 @@ namespace MBoxTestLibrary.Tests
         }
 
         [TestMethod]
-        public void TestIsTriangleRight_False()
+        public void TestIsRightTriangle_False()
         {
             double sideA = 3, sideB = 5, sideC = 5;
             Triangle triangle = new Triangle(sideA, sideB, sideC);
